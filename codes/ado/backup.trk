@@ -1,0 +1,1100 @@
+* 00000032
+*! version 1.0.0
+* Do not erase or edit this file
+* It is used by Stata to track the ado and help
+* files you have installed.
+
+S http://fmwww.bc.edu/RePEc/bocode/e
+N ereplace.pkg
+D 19 May 2025
+U 1
+d 'EREPLACE': module to extend egen and egenmore to permit replacing
+d 
+d    ereplace extends the popular egen and egenmore (if installed)
+d modules to permit replacing. ereplace replaces varname of the
+d optionally specified storage type [type] equal to
+d fcn(arguments).  Depending on fcn(), arguments refers to an
+d expression, a varlist, a numlist, or an empty    string. The
+d options are similarly function dependent.
+d 
+d KW: data management
+d KW: egen
+d KW: replace
+d 
+d Requires: Stata version 6
+d 
+d Distribution-Date: 20200511
+d 
+d Author: Nicholas J. Cox, Durham University
+d Support: email N.J.Cox@@durham.ac.uk
+d 
+d Author: Chris Larkin, The Behavioural Insights Team
+d Support: email chris.larkin@@bi.team
+d 
+f e/ereplace.ado
+f e/ereplace.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/g
+N gtools.pkg
+D 14 Aug 2025
+U 2
+d 'GTOOLS': module to provide a fast implementation of common group commands
+d 
+d    gtools is a Stata package that provides a fast implementation
+d of common group commands like    collapse, egen, isid, levelsof,
+d contract, distinct, and so on using C plugins for a massive
+d speed improvement.
+d 
+d KW:  data management
+d KW: collapse
+d KW: egen
+d KW: isid
+d KW: levelsof
+d KW: contract
+d KW: distinct
+d KW: plugins
+d KW: hash
+d 
+d Requires: Stata version 13.1
+d 
+d Distribution-Date: 20221205
+d 
+d Author: Mauricio Caceres Bravo
+d Support: email mauricio.caceres.bravo@@gmail.com
+d 
+f g/gcollapse.ado
+f g/gcollapse.sthlp
+f g/gcontract.ado
+f g/gcontract.sthlp
+f g/gdistinct.ado
+f g/gdistinct.sthlp
+f g/gduplicates.ado
+f g/gduplicates.sthlp
+f g/gegen.ado
+f g/gegen.sthlp
+f g/gglm.ado
+f g/gglm.sthlp
+f g/gisid.ado
+f g/gisid.sthlp
+f g/givregress.ado
+f g/givregress.sthlp
+f g/glevelsof.ado
+f g/glevelsof.sthlp
+f g/gpoisson.ado
+f g/gquantiles.ado
+f g/gquantiles.sthlp
+f g/greg.ado
+f g/greg.sthlp
+f g/gregress.ado
+f g/gregress.sthlp
+f g/greshape.ado
+f g/greshape.sthlp
+f g/gstats.ado
+f g/gstats.sthlp
+f g/gstats_hdfe.sthlp
+f g/gstats_moving.sthlp
+f g/gstats_range.sthlp
+f g/gstats_residualize.sthlp
+f g/gstats_sum.sthlp
+f g/gstats_summarize.sthlp
+f g/gstats_tab.sthlp
+f g/gstats_transform.sthlp
+f g/gstats_winsor.sthlp
+f g/gtools.ado
+f g/gtools.sthlp
+f g/gtools_macosx_v2.plugin
+f g/gtools_macosx_v3.plugin
+f g/gtools_unix_v2.plugin
+f g/gtools_unix_v3.plugin
+f g/gtools_windows_v2.plugin
+f g/gtools_windows_v3.plugin
+f g/gtop.ado
+f g/gtop.sthlp
+f g/gtoplevelsof.ado
+f g/gtoplevelsof.sthlp
+f g/gunique.ado
+f g/gunique.sthlp
+f _/_gtools_internal.ado
+f _/_gtools_internal.mata
+f f/fasterxtile.ado
+f f/fasterxtile.sthlp
+f h/hashsort.ado
+f h/hashsort.sthlp
+f l/lgtools.mlib
+e
+S http://fmwww.bc.edu/repec/bocode/t
+N tab_chi.pkg
+D 14 Aug 2025
+U 3
+d 'TAB_CHI': modules for tabulation of multiple variables in Stata 8.2 or better
+d 
+d chitest and chitesti carry out chi-square tests for univariate
+d frequency  distributions. chitesti is the immediate command
+d version of chitest. Both require Stata 8.2; earlier versions are
+d available as chitest6 and chitesti6. tabchi and tabchii produce
+d two-way tables of frequencies with chi-square and residuals,
+d including observed and expected frequencies and raw, Pearson and
+d adjusted residuals. tabchii is the immediate command version of
+d tabchi. Both will run in Stata 6 or better. tabm produces
+d tabulation of multiple variables in Stata 7 or better. tabsort
+d produces one- and two-way tables  with sorted rows and/or
+d columns. tabsort will run in Stata 6 or better. tabsplit
+d tabulates  string variables split into parts. tabsplit requires
+d Stata 8.2;  an earlier version is available as tabsplit6.
+d 
+d KW: tabulation
+d KW: categorical data
+d KW: chi-square tests
+d KW: string variables
+d KW: ordered
+d 
+d Requires: Stata version 8.2 (7.0 for tabm, 6.0 for chitest6, chitesti6, tabchi, tabchii, tabsort, tabsplit)
+d 
+d 
+d Author: Nicholas J. Cox, University of Durham
+d Support: email N.J.Cox@@durham.ac.uk
+d 
+d Distribution-Date: 20210512
+d 
+f c/chitest.ado
+f c/chitest.hlp
+f t/tabchi.sthlp
+f c/chitesti.ado
+f c/chitesti.hlp
+f c/chitest6.ado
+f c/chitest6.hlp
+f c/chitesti6.ado
+f c/chitesti6.hlp
+f t/tabchi.ado
+f t/tabchi.hlp
+f t/tabchii.ado
+f t/tabchii.hlp
+f t/tabm.ado
+f t/tabm.sthlp
+f t/tabsort.ado
+f t/tabsort.hlp
+f t/tabsort6.ado
+f t/tabsort6.hlp
+f t/tabsplit.ado
+f t/tabsplit.hlp
+f t/tabsplit6.ado
+f t/tabsplit6.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/i
+N ineqdeco.pkg
+D  3 Sep 2025
+U 4
+d 'INEQDECO': module to calculate inequality indices with decomposition by subgroup
+d 
+d  ineqdeco estimates a range of inequality and related
+d indices      commonly  used by economists, plus optional
+d decompositions of a subset of      these indices by  population
+d subgroup.  Indices estimated are:   members of the single
+d parameter Generalized Entropy class GE(a)   for a = -1, 0, 1,
+d 2; the Atkinson class A(e) for e = 0.5, 1, 2;       the Gini
+d coefficient, and the percentile ratios p90/p10 and p75/p25.
+d Optionally presented are indices  related to the Atkinson
+d inequality indices, viz equally-distributed-equivalent income
+d  Yede(e), social welfare indices W(e), and the Sen welfare index.
+d      If there are observations with negative or zero values on
+d the variable     of interest, and you wish to wish to estimate
+d inequality indices    including these observations, then use
+d ineqdec0 (q.v.)      This version is for Stata versions 8.2
+d onwards. For versions 5 to 8.1,      use ineqdeco5 instead.
+d 
+d KW:  inequality
+d KW: Gini
+d KW: generalized Entropy index
+d KW: Atkinson index
+d KW: decomposition
+d 
+d Requires: Stata version 8.2 (5.0 for ineqdeco5)
+d 
+d Distribution-Date: 20240306
+d 
+d Author: Stephen P. Jenkins, London School of Economics
+d Support: email s.jenkins@@lse.ac.uk
+d 
+f i\ineqdeco.ado
+f i\ineqdeco.sthlp
+f i\ineqdeco5.ado
+f i\ineqdeco5.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/g
+N grstyle.pkg
+D  3 Sep 2025
+U 5
+d 'GRSTYLE': module to customize the overall look of graphs
+d 
+d  grstyle allows you to customize the overall look of graphs from
+d within a do-file without having to fiddle around with external
+d scheme files. The advantage of grstyle over manually editing a
+d scheme file is that everything needed to reproduce your graphs
+d can be included in a single do-file.
+d 
+d KW: graphics
+d KW: scheme files
+d KW: custom graphics
+d KW: plot
+d 
+d Requires: Stata version 9.2 and palettes from SSC (q.v.)
+d 
+d Distribution-Date: 20200919
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f g\grstyle.ado
+f g\grstyle.hlp
+f g\grstyle_set.ado
+f g\grstyle_set.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/p
+N pyramid_chart.pkg
+D  3 Sep 2025
+U 6
+d 'PYRAMID_CHART': module to generate a population pyramid chart
+d 
+d    pyramid_chart generates a population pyramid chart for a given
+d numeric variable, with    categories defined by two categorical
+d variables. The chart displays the distribution    of the numeric
+d variable across the levels of the first categorical variable,
+d split by    the levels of the second categorical variable.
+d 
+d KW: population pyramid
+d 
+d Requires: Stata version 17
+d 
+d Distribution-Date: 20240711
+d 
+d Author:   Masud Rahman, UNHCR
+d Support: email  write2masud@@gmail.com
+d 
+f p\pyramid_chart.ado
+f p\pyramid_chart.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/w
+N waffle.pkg
+D  3 Sep 2025
+U 7
+d 'WAFFLE': module to produce waffle charts using percent or proportion variables
+d 
+d     waffle is a wrapper for twoway scatter and draws waffle
+d charts based on variables containing percents or decimals. The
+d standard waffle chart will be a 10x10 grid with colored squares
+d indicating the percent value; specifying wide will make the
+d grid 5x20.  If only one variable is listed in varlist, by() is
+d allowed and will make a different waffle chart for each
+d category of by(). You can specify up to 5 variables in varlist
+d and indicate the colors of each category.  Other twoway options
+d  not listed here are not allowed because waffle charts rely on
+d specific options of twoway being specified.
+d 
+d KW: waffle
+d KW: graphics
+d 
+d Requires: Stata version 17
+d 
+d Distribution-Date: 20241019
+d 
+d Author: Asjad Naqvi, Austrian Institute of Economic Research (WIFO)
+d Support: email asjadnaqvi@@gmail.com
+d 
+d Author: Jared Colston, University of Wisconsin-Madison
+d Support: email colston@@wisc.edu
+d 
+f w\waffle.ado
+f w\waffle.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/v
+N vselect.pkg
+D  3 Sep 2025
+U 8
+d 'VSELECT': module to perform linear regression variable selection
+d 
+d  vselect performs variable selection for linear regression.
+d Through the use of the Furnival-Wilson leaps-and-bounds
+d algorithm, all-subsets variable selection is supported.  The
+d stepwise methods, forward selection and backward elimination, are
+d also supported. This version of the vselect package adds two
+d features.  Factor variables are  now supported for the fix()
+d option.  Now when performing all-subsets  regression, users may
+d specify the number of best models to be reported at each
+d predictor size. This version is an update of that published in
+d Stata Journal, 2011, 11(1):155.
+d 
+d KW: regression
+d KW: variable selection
+d KW: leaps-and-bounds
+d KW: all-subsets
+d KW: stepwise regression
+d 
+d Requires: Stata version 11.1
+d 
+d Distribution-Date: 20141215
+d 
+d Author: Charles Lindsey, StataCorp LP
+d Support: email clindsey@@stata.com
+d 
+f v\vselect.ado
+f v\vselect.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/m
+N missings.pkg
+D  3 Sep 2025
+U 9
+d 'MISSINGS': module to manage missing values
+d 
+d  missings includes utility commands for managing variables  that
+d (may) have missing values, which variously report, list  and
+d tabulate missing values; generate a variable containing  numbers
+d of missing values; and drop variables and/or observations that
+d are all missing.   missings is intended to unite and supersede
+d the author's previous commands nmissing and dropmiss.
+d 
+d KW: missings
+d KW: drop
+d KW: data management
+d KW: missing values
+d 
+d Requires: Stata version 12
+d 
+d Distribution-Date: 20170511
+d 
+d Author: Nicholas J. Cox, Durham University
+d Support: email N.J.Cox@@durham.ac.uk
+d 
+f m\missings.ado
+f m\missings.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/d
+N diff.pkg
+D  3 Sep 2025
+U 10
+d 'DIFF': module to perform Differences in Differences estimation
+d 
+d  diff performs several differences in differences (diff-in-diff)
+d estimations of the treatment effect of  a given outcome variable
+d from a pooled base line and follow up dataset: Single
+d Diff-in-Diff, Diff-in-Diff controlling for covariates,
+d Kernel-based Propensity Score Matching diff-in-diff, and the
+d Quantile Diff-in-Diff. diff is also suitable for estimating
+d repeated cross section diff-in-diff (except for the kernel
+d option).
+d 
+d KW: difference in differences
+d KW: DID
+d KW: average treatment effect
+d KW: policy analysis
+d KW: kernel matching
+d KW: quantile treatment effect
+d KW: balancing test
+d 
+d Requires: Stata version 10.0
+d 
+d Distribution-Date: 20191231
+d 
+d Author: Juan M. Villa, Brooks World Poverty Institute
+d Support: email juan.villalora@@postgrad.manchester.ac.uk
+d 
+f d\diff.ado
+f d\diffbs.ado
+f d\diff.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/o
+N outreg2.pkg
+D  3 Sep 2025
+U 11
+d 'OUTREG2': module to arrange regression outputs into an illustrative table
+d 
+d  outreg2 provides a fast and easy way to produce an illustrative
+d table  of regression outputs. The regression outputs are produced
+d piecemeal and are  difficult to compare without some type of
+d rearrangement. outreg2  automates this process by concatenating
+d the successive regression outputs in a  vertical format. The
+d resulting table is saved to the disk in ASCII  format, which can
+d be read by other programs. outreg2 thus facilitates  the
+d convertion of regression outputs to a standard format suitable
+d for  inclusion in a scholarly publication. The functionality of
+d outreg2 is based on the earlier package outreg,  by John Luke
+d Gallup. Unlike outreg, outreg2 is capable of writing LaTeX-format
+d tables, as well as ASCII, MS Word and MS Excel.
+d 
+d KW: regression
+d KW: output
+d KW: tables
+d KW: tab-delimited output
+d KW: LaTeX
+d KW: Word
+d KW: Excel
+d 
+d Requires: Stata version 7
+d 
+d Distribution-Date: 20140817
+d 
+d Author: Roy Wada
+d Support: email roywada@@hotmail.com
+d 
+f o\outreg2.ado
+f o\outreg2_prf.ado
+f o\outreg2.hlp
+f s\shellout.ado
+f s\shellout.hlp
+f s\seeout.ado
+f s\seeout.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/s
+N spider.pkg
+D  3 Sep 2025
+U 12
+d 'SPIDER': module for spider plots
+d 
+d  This is a Stata package for plotting spider plots.  The command
+d is based on the following guide on Medium: Spider plots.
+d 
+d KW: graphics
+d KW: spider plots. radar plots
+d 
+d Requires: Stata version 15 and palettes, colrspace from SSC
+d 
+d Distribution-Date: 20250124
+d 
+d Author: Asjad Naqvi, Austrian Institute of Economic Research (WIFO)
+d Support: email asjadnaqvi@@gmail.com
+d 
+f s\spider.ado
+f s\spider.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/g
+N geodist.pkg
+D  3 Sep 2025
+U 13
+d 'GEODIST': module to compute geographical distances
+d 
+d   geodist calculates geographical distances by measuring the
+d length of the shortest path between two points along the surface
+d of a mathematical model of the earth. By default, geodist
+d implements Vincenty's (1975) formula to calculate distances on a
+d reference ellipsoid. geodist can also calculate great-circle
+d distances using the haversine formula.
+d 
+d KW: geodetic
+d KW: geodesic,Vincenty,great-circle,ellipsoid,distance
+d 
+d Requires: Stata version 9.2
+d 
+d Distribution-Date: 20190624
+d 
+d Author: Robert Picard
+d Support: email robertpicard@@gmail.com
+d 
+f g\geodist.ado
+f g\geodist_run.ado
+f g\geodist.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/v
+N vincenty.pkg
+D  3 Sep 2025
+U 14
+d 'VINCENTY': module to calculate distances on the Earth's surface
+d 
+d vincenty is used for calculating geodesic distances  between a
+d pair of points on the surface of the Earth (specified in signed
+d decimal degrees latitude and longitude), using an accurate
+d ellipsoidal model of the Earth. see
+d http://www.ngs.noaa.gov/PUBS_LIB/inverse.pdf
+d 
+d KW: distances
+d KW: geodesic
+d KW: Vincenty
+d 
+d Requires: Stata version 8.2
+d 
+d Distribution-Date: 20070216
+d 
+d Author: Austin Nichols
+d Support: email austinnichols@@gmail.com
+d 
+f v\vincenty.ado
+f v\vincenty.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/f
+N fastgini.pkg
+D  3 Sep 2025
+U 15
+d 'FASTGINI': module to calculate Gini coefficient with jackknife standard errors
+d 
+d fastgini calculates the Gini coefficient as well as its jackknife
+d standard error. Mata is used to speed-up the process for exact
+d calculations, and plus there's an option to aggregate data first
+d and estimate Gini on the grouped data.
+d 
+d KW: Gini coefficient
+d KW: inequality
+d KW: jackknife
+d 
+d Requires: Stata version 9
+d 
+d Distribution-Date: 20070217
+d 
+d Author: Zurab Sajaia
+d Support: email zsajaia@@hotmail.com
+d 
+f f\fastgini.ado
+f f\fastgini.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/t
+N tabout.pkg
+D  3 Sep 2025
+U 16
+d 'TABOUT': module to export publication quality cross-tabulations
+d 
+d  tabout is a table building program for oneway and twoway
+d tables of frequencies and percentages, and for summary tables. It
+d produces publication quality tables for export to a text file.
+d These tables can then be used with spreadsheets, word processors,
+d web browsers or compilers like LaTeX. The tables produced by
+d tabout allow multiple panels so that a number of variables can be
+d included in the one table. tabout also provides standard errors
+d and confidence intervals, as well as a range of table statistics
+d (chi2 etc). The output from tabout matches Stata's tabulate, most
+d of tabstat and some of table.
+d 
+d KW: tables
+d KW: latex
+d KW: html
+d KW: delimited text
+d 
+d Requires: Stata version 9.2
+d 
+d Distribution-Date: 20190316
+d 
+d Author: Ian Watson , Macquarie University, Australia
+d Support: email mail@@ianwatson.com.au
+d 
+f t\tabout.ado
+f t\tabstatout.ado
+f t\tabout.hlp
+f f\figout.ado
+f f\figout.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/l
+N logout.pkg
+D  3 Sep 2025
+U 17
+d 'LOGOUT': module to convert log or ASCII files into various output formats
+d 
+d logout provides a fast and easy way to convert log or ASCII files
+d into various output formats compatible with Word, Excel, LaTeX,
+d or Stata datafile. Can be used as a prefix or by itself after a
+d log file has been created. caplog provides a fast and easy way to
+d capture text-based log file, possibly for use with logout or
+d dataout.
+d 
+d KW: log file
+d KW: table
+d KW: tab
+d KW: summary
+d KW: output
+d KW: LaTeX
+d KW: Word
+d KW: Excel
+d KW: dataout
+d 
+d Requires: Stata version 7.0
+d 
+d Distribution-Date: 20091106
+d 
+d Author: Roy Wada
+d Support: email roywada@@hotmail.com
+d 
+f l\logout.ado
+f l\logout.hlp
+f c\caplog.ado
+f c\caplog.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/s
+N shp2dta.pkg
+D  3 Sep 2025
+U 18
+d 'SHP2DTA': module to converts shape boundary files to Stata datasets
+d 
+d  shp2dta reads a shape (.shp) and dbase (.dbf) file from disk and
+d converts them into Stata datasets.  The shape and dbase files
+d must have the same name and be saved in the same directory.  The
+d user-written command tmap can use the two datasets that shp2dta
+d creates. shp2dta can convert only polygon shapefiles (type 5).
+d 
+d KW: tmap
+d KW: shape files
+d KW: maps
+d 
+d Requires: Stata version 9.1
+d 
+d Distribution-Date: 20150717
+d 
+d Author: Kevin Crow , StataCorp LP
+d Support: email kcrow@@stata.com
+d 
+f s\shp2dta.ado
+f s\shp2dta.hlp
+f s\shp2dta.dlg
+e
+S http://fmwww.bc.edu/repec/bocode/c
+N coefplot.pkg
+D  3 Sep 2025
+U 19
+d 'COEFPLOT': module to plot regression coefficients and other results
+d 
+d   coefplot plots results from estimation commands or Stata
+d matrices. Results from multiple models or matrices can be
+d combined in a single graph. The default behavior of coefplot is
+d to draw markers for coefficients and horizontal spikes for
+d confidence intervals. However, coefplot can also produce various
+d other types of graphs.
+d 
+d KW: graphics
+d KW: coefficients
+d KW: estimation
+d 
+d Requires: Stata version 11
+d 
+d Distribution-Date: 20250822
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f c\coefplot.ado
+f c\coefplot.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/s
+N spmap.pkg
+D  3 Sep 2025
+U 20
+d 'SPMAP': module to visualize spatial data
+d 
+d   spmap is aimed at visualizing several kinds of spatial data,
+d and is particularly suited for drawing thematic maps and
+d displaying the results of spatial data analyses. Proper
+d specification of spmap options and suboptions, combined with the
+d availability of properly formatted spatial data, allows the user
+d to draw several kinds of maps, including choropleth maps,
+d proportional symbol maps, pin maps, pie chart maps, and
+d noncontiguous area cartograms. spmap completely supersedes its
+d predecessor tmap.
+d 
+d KW: maps
+d KW: thematic
+d KW: spatial data
+d KW: choropleth
+d 
+d Requires: Stata version 9.2
+d 
+d Distribution-Date: 20180118
+d 
+d Author: Maurizio Pisati, University of Milano Bicocca - Italy
+d Support: email maurizio.pisati@@unimib.it
+d 
+f s\spmap.ado
+f s\spmap.hlp
+f s\spmap_arrow.ado
+f s\spmap_color.ado
+f s\spmap_diagram.ado
+f s\spmap_examples.ado
+f s\spmap_label.ado
+f s\spmap_line.ado
+f s\spmap_point.ado
+f s\spmap_polygon.ado
+f s\spmap_psl.ado
+f s\spmap_scalebar.ado
+e
+S http://fmwww.bc.edu/repec/bocode/d
+N distinct.pkg
+D  3 Sep 2025
+U 21
+d 'DISTINCT': module to display distinct values of variables
+d 
+d distinct displays the number of distinct values for each variable
+d in a varlist.  The varlist may include both numeric and string
+d variables.
+d 
+d KW: distinct observations
+d KW: unique values
+d 
+d Requires: Stata version 8.0
+d 
+d 
+d Author: Gary Longton, Fred Hutchinson Cancer Research Center
+d Support: email glongton@@fhcrc.org
+d 
+d Author: Nicholas J. Cox, Durham University
+d Support: email N.J.Cox@@durham.ac.uk
+d 
+d Distribution-Date: 20120321
+d 
+f d\distinct.ado
+f d\distinct.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/s
+N splitvallabels.pkg
+D  3 Sep 2025
+U 22
+d 'SPLITVALLABELS': module to split up value labels for multi-line graph labelling
+d 
+d splitvallabels splits the value labels for a variable into
+d multiple chunks, and returns those chunks in a form appropriate
+d for specification as part of a graph command. When the over()
+d variable in, for example, a bar graph has long labels, these
+d labels can overlap each other in the graph.  This command breaks
+d up these long labels and packages them in a format appropriate
+d for specification as part of a relabel option. This will create
+d multi-line labels on the graph.
+d 
+d KW: graphics
+d KW: labels
+d 
+d Requires: Stata version 8.2
+d 
+d 
+d Author: Nick Winter,  University of Virginia
+d Support: email  nwinter@@virginia.edu
+d 
+d Author: Ben Jann, ETH Zurich
+d Support: email  ben.jann@@soz.gess.ethz.ch
+d 
+d Distribution-Date: 20080814
+f s\splitvallabels.ado
+f s\splitvallabels.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/i
+N indeplist.pkg
+D  3 Sep 2025
+U 23
+d 'INDEPLIST': module to returns lists of independent variables from the active estimation command
+d 
+d Indeplist displays the names of the independent variables of the
+d active estimation command. Separate list will be displayed if the
+d  estimation command contains multiple equations, unless the
+d equation option is specified. In that case only lists of
+d independent variables  from the equations specified in the
+d equation option will be displayed.
+d 
+d KW: independent variables
+d KW: explanatory variables
+d 
+d Requires: Stata version 7
+d 
+d Distribution-Date: 20070731
+d 
+d Author: Maarten L. Buis, Universitaet Tuebingen
+d Support: email maarten.buis@@ifsoz.uni-tuebingen.de
+d 
+f i\indeplist.ado
+f i\indeplist.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/c
+N confirmdir.pkg
+D  3 Sep 2025
+U 24
+d 'CONFIRMDIR': module to confirm if a directory exists
+d 
+d confirmdir is designed for programmers who want to know if a
+d directory exists.  This is just like confirm command when used to
+d confirm a file.  If Stata allowed their  confirm command to also
+d have the "dir" option, this program would not have been written.
+d Stata's -confirm file- will confirm a directory in Unix/Linux but
+d not in Windows.  Confirmdir works in all operating systems.
+d 
+d KW: confirm
+d KW: directory
+d KW: exists
+d 
+d Requires: Stata version 8.0
+d 
+d 
+d Author: Dan Blanchette, The Carolina Population Center, UNC-CH
+d Support: email  dan_blanchette@@unc.edu
+d 
+d Distribution-Date: 20110226
+d 
+f c\confirmdir.ado
+f c\confirmdir.hlp
+e
+S http://fmwww.bc.edu/repec/bocode/w
+N wbopendata.pkg
+D  3 Sep 2025
+U 25
+d 'WBOPENDATA': module to access World Bank databases
+d 
+d  wbopendata draws from the main World Bank collections of
+d development indicators, compiled from officially-recognized
+d international sources, and made available through the World Bank
+d Open Data Initiative, and presents the most current and accurate
+d global development data available, and includes national,
+d regional and global estimates. Users can chose from one of three
+d of the languages supported by the database, namely, English,
+d Spanish, or French. Three possible downloads options are
+d currently supported: country - all indicators for all years for a
+d single country. topic - all indicators within a specific topic,
+d for all years and all countries. indicator - all years for all
+d countries for a single indicator. Users can also choose to have
+d the data displayed in either the wide or long format (wide is the
+d default option).
+d 
+d KW: World Bank
+d KW: development indicators
+d 
+d Requires: Stata version 9
+d 
+d Distribution-Date: 20200709
+d 
+d Author: Joao Pedro Azevedo, World Bank
+d Support: email jazevedo@@worldbank.org
+d 
+f w\wbopendata.ado
+f w\wbopendata_populate_list.ado
+f w\wbopendata_examples.ado
+f w\wbopendata.sthlp
+f w\wbopendata_indicators.sthlp
+f w\wbopendata_adminregion.sthlp
+f w\wbopendata_incomelevel.sthlp
+f w\wbopendata_lendingtype.sthlp
+f w\wbopendata_region.sthlp
+f w\wbopendata_sourceid.sthlp
+f w\wbopendata_topicid.sthlp
+f w\wbopendata.dlg
+f _\_api_read_indicators.ado
+f _\_api_read.ado
+f _\_countrymetadata.ado
+f _\_parameters.ado
+f _\_query_indicators.ado
+f _\_query_metadata.ado
+f _\_query.ado
+f _\_tknz.ado
+f _\_update_countrymetadata.ado
+f _\_update_indicators.ado
+f _\_update_wbopendata.ado
+f _\_wbod_tmpfile1.ado
+f _\_wbod_tmpfile2.ado
+f _\_wbod_tmpfile3.ado
+f _\_website.ado
+f i\indicators.txt
+f c\country.txt
+f w\world-c.dta
+f w\world-d.dta
+e
+S http://fmwww.bc.edu/repec/bocode/m
+N mdesc.pkg
+D  3 Sep 2025
+U 26
+d 'MDESC': module to tabulate prevalence of missing values
+d 
+d  Produces a table with the number of missing values, total number
+d of cases, and percent missing for each variable in varlist. mdesc
+d works with both numeric and character variables.
+d 
+d KW: missing values
+d KW: data management
+d 
+d Requires: Stata version 10
+d 
+d Distribution-Date: 20110825
+d 
+d Author: Rose Anne Medeiros, Department of Sociology, Rice University
+d Support: email rose.a.medeiros@@rice.edu
+d 
+d Author: Dan Blanchette, The Carolina Population Center, UNC-CH
+d Support: email dan_blanchette@@unc.edu
+d 
+f m\mdesc.ado
+f m\mdesc.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/h
+N heatplot.pkg
+D  3 Sep 2025
+U 27
+d 'HEATPLOT': module to create heat plots and hexagon plots
+d 
+d  heatplot creates heat plots from variables or matrices. One
+d example of a heat plot is a two-dimensional histogram in which
+d the frequencies of combinations of binned Y and X are displayed
+d as rectangular (or hexagonal) fields using a color gradient.
+d Another example is a plot of a trivariate distribution where the
+d color gradient is used to visualize the (average) value of Z
+d within bins of Y and X. Yet another example is a plot that
+d displays the contents of a matrix, say, a correlation matrix or a
+d spacial weights matrix, using a color gradient.
+d 
+d KW: heatplot
+d KW: color map
+d KW: hexplot
+d 
+d Requires: Stata version 13 and gtools, palettes, colrspace (>=14.2) from SSC (q.v.)
+d 
+d Distribution-Date: 20210827
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f h\heatplot.ado
+f h\heatplot.sthlp
+f h\hexplot.ado
+f h\hexplot.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/e
+N elasticregress.pkg
+D  3 Sep 2025
+U 28
+d 'ELASTICREGRESS': module to perform elastic net regression, lasso regression, ridge regression
+d 
+d    elasticregress calculates an elastic net-regularized
+d regression: an estimator of a    linear model in which larger
+d parameters are discouraged.  This estimator nests the    LASSO
+d and the ridge regression, which can be estimated by setting alpha
+d equal to 1 and 0 respectively.    lassoregress estimates the
+d LASSO; it is a convenience command equivalent to
+d elasticregress with the option alpha(1).    ridgeregress
+d estimates a ridge regression; it is a convenience command
+d equivalent to elasticregress with the option alpha(0).
+d elasticregress implements the coordinate descent algorithm in
+d Friedman, Hastie and   Tibshirani (J.Stat.Software, 2008) to
+d produce very efficient estimates of the LASSO, of the ridge
+d regression and of a generalization of the two. The algorithm used
+d is the    'covariance updates' algorithm presented in Section 2
+d of that paper, except that it    does not exploit sparsity in the
+d covariates.
+d 
+d KW: regression
+d KW: elastic net regression
+d KW: ridge regression
+d KW: lasso
+d 
+d Requires: Stata version 13
+d 
+d Distribution-Date: 20180416
+d 
+d Author: Wilbur Townsend, Stanford University
+d Support: email wilbur.townsend@@gmail.com
+d 
+f e\elasticregress.ado
+f e\elasticregress.sthlp
+f e\elasticregress.ihlp
+f l\lassoregress.ado
+f l\lassoregress.sthlp
+f r\ridgeregress.ado
+f r\ridgeregress.sthlp
+e
+S http://fmwww.bc.edu/RePEc/bocode/j
+N joy_plot.pkg
+D  3 Sep 2025
+U 29
+d 'JOY_PLOT': module to produce joy plots
+d 
+d  joy_plot is a command that can be used to create joyplots, also
+d known as ridgeplots.
+d 
+d KW: graphics
+d KW: joy plot
+d KW: ridgeplot
+d 
+d Requires: Stata version 14.2 and palettes, colrspace from SSC (q.v.)
+d 
+d Distribution-Date: 20220610
+d 
+d Author: Fernando Rios-Avila, Levy Economics Institute of Bard College
+d Support: email friosavi@@levy.org
+d 
+f j\joy_plot.ado
+f j\joy_plot.sthlp
+e
+S http://fmwww.bc.edu/RePEc/bocode/j
+N joyplot.pkg
+D  3 Sep 2025
+U 30
+d 'JOYPLOT': module to produce joyplots
+d 
+d  This program produces joy plots, or ridgeline plots, as
+d described in the Medium ridgeline plots feature.
+d 
+d KW: joyplot
+d KW: graphics
+d KW: ridgeline plot
+d 
+d Requires: Stata version 15 and palettes, colrspace from SSC
+d 
+d Distribution-Date: 20250315
+d 
+d Author: Asjad Naqvi, Austrian Institute of Economic Research (WIFO)
+d Support: email asjadnaqvi@@gmail.com
+d 
+f j\joyplot.ado
+f j\joyplot.sthlp
+f r\ridgeline.ado
+f r\ridgeline.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/p
+N palettes.pkg
+D  3 Sep 2025
+U 31
+d 'PALETTES': module to provide color palettes, symbol palettes, and line pattern palettes
+d 
+d  The palettes module contains three commands: colorpalette,
+d symbolpalette, and linepalette. The commands provide color,
+d symbol, and line pattern palettes for use in Stata graphs.
+d 
+d KW: graphics
+d KW: colors
+d KW: marker symbols
+d KW: line patterns
+d 
+d Requires: Stata version 14.2 and colrspace from SSC (q.v.); (version 9.2 for colorpalette9)
+d 
+d Distribution-Date: 20240705
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f p\palettes.hlp
+f c\colorpalette.ado
+f c\colorpalette.sthlp
+f c\colorpalette9.ado
+f c\colorpalette9.hlp
+f l\linepalette.ado
+f l\linepalette.hlp
+f s\symbolpalette.ado
+f s\symbolpalette.hlp
+f c\colorcheck.ado
+f c\colorcheck.sthlp
+e
+S http://fmwww.bc.edu/repec/bocode/c
+N colrspace.pkg
+D  3 Sep 2025
+U 32
+d 'COLRSPACE': module providing a class-based color management system in Mata
+d 
+d   The colrspace module provides a class-based color management
+d system implemented in Mata. It supports a wide variety of color
+d spaces and translations among them, provides color generators and
+d a large collection of named palettes, and features functionality
+d such as color interpolation, grayscale conversion, or color
+d vision deficiency simulation.
+d 
+d KW: graphics
+d KW: color management
+d 
+d Requires: Stata version 14.2
+d 
+d Distribution-Date: 20240705
+d 
+d Author: Ben Jann, University of Bern
+d Support: email jann@@soz.unibe.ch
+d 
+f c\colrspace.sthlp
+f c\colrspace_source.sthlp
+f c\colrspace_library_generators.sthlp
+f c\colrspace_library_namedcolors.sthlp
+f c\colrspace_library_palettes.sthlp
+f c\colrspace_library_lsmaps.sthlp
+f c\colrspace_library_rgbmaps.sthlp
+f l\lcolrspace.mlib
+e
